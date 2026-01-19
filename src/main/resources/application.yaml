@@ -1,3 +1,6 @@
+server:
+  port: 8888
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5434/demo
@@ -18,8 +21,8 @@ spring:
     name: security
 
   app:
-    - jwtSecret=mySecretKey123912738aopsgjnspkmndfsopkvajoirjg94gf2opfng2moknm
-    - jwtExpirationMs=3000000
+    jwtSecret: mySecretKey123912738aopsgjnspkmndfsopkvajoirjg94gf2opfng2moknm
+    jwtExpirationMs: 3000000
 
 logging:
   level:
